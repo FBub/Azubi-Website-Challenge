@@ -3,6 +3,20 @@
     --font-secondary: ;
     --color-primary: ;
     --color-secondary: ;
-    --color-tertiary: ;
-    
+    --color-tertiary: ;   
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    src:    url("/Fonts/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
+            url("/Fonts/Atkinson-Hyperlegible-BoldItalic-102.woff") format("woff"),
+            url("/Fonts/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
+            url("/Fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff");
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Atkinson Hyperlegible", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 }
