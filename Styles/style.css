@@ -8,10 +8,10 @@
 
 @font-face {
     font-family: "Atkinson Hyperlegible";
-    src:    url("/Fonts/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
-            url("/Fonts/Atkinson-Hyperlegible-BoldItalic-102.woff") format("woff"),
-            url("/Fonts/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
-            url("/Fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff");
+    src:    url("../Fonts/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
+            url("../Fonts/Atkinson-Hyperlegible-BoldItalic-102.woff") format("woff"),
+            url("../Fonts/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
+            url("../Fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff");
   }
   
 * {
