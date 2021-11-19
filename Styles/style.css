@@ -3,17 +3,20 @@
     --font-text-family: 'Atkinson Hyperlegible';
     --font-text-weight-regular: 'Regular';
     --font-text-weight-bold: 'Bold';
-    --color-primary: ;
-    --color-secondary: ;
-    --color-tertiary: ;   
+    --color-primary: #3824f2;
+    --color-secondary: #f2d024;
+    --color-tertiary: #e62253;   
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --padding-class: 3rem 1rem;
 }
 
 @font-face {
     font-family: 'Atkinson Hyperlegible';
-    src:    url('../Fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff'),
-            url('../Fonts/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff'),
-            url('../Fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff'),
-            url('../Fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff');
+    src:    url('../Fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
+            url('../Fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'),
+            url('../Fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
+            url('../Fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
   }
 
 * {
@@ -23,7 +26,66 @@
     font-family: 'Atkinson Hyperlegible Regular', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
-p {
+h1 {
     font-family: var(--font-text-family);
     font-weight: var(--font-text-weight-bold);
+}
+
+p {
+    font-family: var(--font-text-family);
+
+    color: white;
+}
+
+/* / / / CLASSES / / / */
+
+.padding {
+    padding: var(--padding-class);
+}
+
+
+
+/* / / / CLASSES / / / */
+
+body {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+    min-height: 10vh;
+}
+
+.introduction {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+}
+
+.about {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.projects {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.contact {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+}
+
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
