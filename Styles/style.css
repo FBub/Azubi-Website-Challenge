@@ -1,14 +1,18 @@
 :root {
     --font-headline: ;
-    --font-text-family: 'Atkinson Hyperlegible';
-    --font-text-weight-regular: 'Regular';
-    --font-text-weight-bold: 'Bold';
+    --font-text-family: 'Atkinson Hyperlegible Regular';
+    --font-text-family-bold: 'Atkinson Hyperlegible';
+    --font-size-h1: 6.353701548rem;
+    --font-size-h2: 3.926886rem;
+    --font-size-h3: 2.427rem;
+    --font-size-h4: 1.5rem;
+    --font-size-p: 1.5rem;
     --color-primary: #3824f2;
     --color-secondary: #f2d024;
     --color-tertiary: #e62253;   
     --color-black: #000000;
     --color-white: #ffffff;
-    --padding-class: 3rem 1rem;
+    --padding-class: 3rem 1.5rem;
 }
 
 @font-face {
@@ -27,14 +31,37 @@
 }
 
 h1 {
-    font-family: var(--font-text-family);
-    font-weight: var(--font-text-weight-bold);
+    font-family: var(--font-text-family-bold);
+    font-size: var(--font-size-h1);
+    line-height: 100%;
+}
+
+h2 {
+    font-family: var(--font-text-family-bold);
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-family: var(--font-text-family-bold);
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+        font-family: var(--font-text-family-bold);
+        font-size: var(--font-size-h4);
 }
 
 p {
     font-family: var(--font-text-family);
+    font-size: var(--font-size-p);
+}
 
-    color: white;
+a {
+    font-family: var(--font-text-family-bold);
+    font-size: var(--font-size-p);
+    color: black;
+    background-color: white;
+    width: 100%;
 }
 
 /* / / / CLASSES / / / */
@@ -57,12 +84,25 @@ header {
     color: var(--color-white);
 }
 
+header::selection {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
 .topbar {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-black);
+    color: var(--color-white);
     min-height: 10vh;
+}
+
+.topbar::selection {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .introduction {
@@ -70,22 +110,55 @@ header {
     color: var(--color-black);
 }
 
+.introduction::selection {
+    background-color: var(--color-black);
+    color: var(--color-secondary);
+}
+
+
+
 .about {
     background-color: var(--color-white);
     color: var(--color-black);
 }
+
+.about::selection {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+
 
 .projects {
     background-color: var(--color-black);
     color: var(--color-white);
 }
 
+.projects::selection {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+
+
 .contact {
     background-color: var(--color-secondary);
     color: var(--color-black);
 }
 
+.contact::selection {
+    background-color: var(--color-black);
+    color: var(--color-secondary);
+}
+
+
+
 footer {
     background-color: var(--color-black);
     color: var(--color-white);
+}
+
+footer::selection {
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
