@@ -79,16 +79,6 @@ body {
     min-height: 100vh;
 }
 
-header {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-header::selection {
-    background-color: var(--color-white);
-    color: var(--color-primary);
-}
-
 .topbar {
     display: flex;
     justify-content: center;
@@ -105,12 +95,22 @@ header::selection {
     user-select: none;
 }
 
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+header *::selection {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
 .introduction {
     background-color: var(--color-secondary);
     color: var(--color-black);
 }
 
-.introduction::selection {
+.introduction *::selection {
     background-color: var(--color-black);
     color: var(--color-secondary);
 }
@@ -122,7 +122,7 @@ header::selection {
     color: var(--color-black);
 }
 
-.about::selection {
+.about *::selection {
     background-color: var(--color-black);
     color: var(--color-white);
 }
@@ -134,7 +134,7 @@ header::selection {
     color: var(--color-white);
 }
 
-.projects::selection {
+.projects *::selection {
     background-color: var(--color-white);
     color: var(--color-black);
 }
@@ -146,7 +146,7 @@ header::selection {
     color: var(--color-black);
 }
 
-.contact::selection {
+.contact *::selection {
     background-color: var(--color-black);
     color: var(--color-secondary);
 }
@@ -158,7 +158,8 @@ footer {
     color: var(--color-white);
 }
 
-footer::selection {
+footer *::selection {
     background-color: var(--color-white);
     color: var(--color-black);
 }
+
