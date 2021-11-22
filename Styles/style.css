@@ -7,13 +7,14 @@
     --font-size-h3: 2.427rem;
     --font-size-h4: 1.5rem;
     --font-size-p: 1.5rem;
+    --font-size-small: 0.927070457rem;
     --color-primary: #3824f2;
     --color-secondary: #f2d024;
     --color-tertiary: #e62253;   
     --color-black: #000000;
     --color-white: #ffffff;
     --padding-class: 3rem 1.5rem;
-    --margin-class: 0rem 0rem 1.5rem
+    --margin-class: 0rem 0rem 1.5rem;
 }
 
 @font-face {
@@ -60,11 +61,21 @@ p {
 a {
     font-family: var(--font-text-family-bold);
     font-size: var(--font-size-p);
-    color: black;
-    background-color: white;
     text-decoration: none;
 }
 
+.link:after {
+    content: " 🡽";
+}
+
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.fineprint {
+    font-size: var(--font-size-small);
+}
 /* / / / CLASSES / / / */
 
 .padding {
@@ -155,7 +166,10 @@ header *::selection {
     color: var(--color-black);
 }
 
-
+.projects a {
+    color: black;
+    background-color: white;
+}
 
 .contact {
     background-color: var(--color-secondary);
@@ -189,6 +203,17 @@ footer *::selection {
     color: var(--color-black);
 }
 
+.footer__icon {
+    fill: var(--color-white);
+    height: 3rem;
+    margin: 0 1rem 0 0;
+}
+
+.footer__iconbar {
+    display: flex;
+}
+
+
 /* / / / CONTACT INPUT / / / */
 
 input {
@@ -217,4 +242,8 @@ input[type=textarea] {
 ::placeholder {
     color: var(--color-white);
     font-size: var(--font-size-p);
+}
+
+.elementspacing {
+    margin: var(--margin-class);
 }
