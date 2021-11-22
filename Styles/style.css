@@ -79,6 +79,8 @@ body {
     min-height: 100vh;
 }
 
+/* / / / TOPBAR / / / */
+
 .topbar {
     display: flex;
     justify-content: center;
@@ -88,12 +90,14 @@ body {
     min-height: 10vh;
 }
 
-.topbar::selection {
+.topbar::selection,.topbar *::selection {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
+
+
 
 header {
     background-color: var(--color-primary);
@@ -104,6 +108,9 @@ header *::selection {
     background-color: var(--color-white);
     color: var(--color-primary);
 }
+
+
+
 
 .introduction {
     background-color: var(--color-secondary);
@@ -125,6 +132,10 @@ header *::selection {
 .about *::selection {
     background-color: var(--color-black);
     color: var(--color-white);
+}
+
+.about h2 {
+    color: var(--color-primary);
 }
 
 
@@ -149,6 +160,10 @@ header *::selection {
 .contact *::selection {
     background-color: var(--color-black);
     color: var(--color-secondary);
+}
+
+.contact h2 {
+    color: var(--color-tertiary);
 }
 
 
