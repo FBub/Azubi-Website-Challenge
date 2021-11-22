@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azubi Website Challenge</title>
     <link rel="stylesheet" href="Styles\style.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 </head>
 <body>
 
@@ -36,7 +37,15 @@
 
         <section class="projects padding">
             <h2>Projects</h2>
-            <div class="slider-placeholder"></div>
+            <div class="glide">
+                <div data-glide-el="track" class="glide__track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                  </ul>
+                </div>
+              </div>
             <h4>Bring In 'Da Players,<br>
                 Bring In 'Da Creatives</h4>
             <p>"Bring In 'Da Players, Bring In 'Da Creatives" is a visual identity project designed to showcase the creativeness and aesthetic nature of the Super Smash Bros content community.</p>
@@ -47,8 +56,15 @@
             <h2>Contact</h2>
             <p>Got an idea for a cool project we could work on? Just want to say hi?</p>
             <p>Please shoot me a message, I'm all ears</p>
-        </section>
-        
+
+            <form class="contact__form">
+               <!-- First name: --> <input type="email" name="email" placeholder="Your E-Mail" class="padding margin"/>
+               <!-- Last name: --> <input type="text" name="subject" placeholder="Your Subject" class="padding margin"/>
+               <!-- Last name: -->  <input type="textarea" name="message" placeholder="Your Message" class="padding margin"/>
+               <input type="submit" rows="4" cols="50" value="Send">
+            </form>
+        </section>  
+
     </main>
 
     <footer class="padding">

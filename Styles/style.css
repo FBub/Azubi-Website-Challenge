@@ -13,6 +13,7 @@
     --color-black: #000000;
     --color-white: #ffffff;
     --padding-class: 3rem 1.5rem;
+    --margin-class: 0rem 0rem 1.5rem
 }
 
 @font-face {
@@ -68,6 +69,10 @@ a {
 
 .padding {
     padding: var(--padding-class);
+}
+
+.margin {
+    margin: var(--margin-class);
 }
 
 
@@ -155,6 +160,7 @@ header *::selection {
 .contact {
     background-color: var(--color-secondary);
     color: var(--color-black);
+    
 }
 
 .contact *::selection {
@@ -166,7 +172,12 @@ header *::selection {
     color: var(--color-tertiary);
 }
 
-
+.contact__form {
+    /* next 3 lines allow button to be on the right */
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
 
 footer {
     background-color: var(--color-black);
@@ -178,3 +189,32 @@ footer *::selection {
     color: var(--color-black);
 }
 
+/* / / / CONTACT INPUT / / / */
+
+input {
+    width: 100%;
+    background-color: var(--color-tertiary);
+    height: 5rem;
+    border-style: none;
+    font-family: var(--font-text-family);
+    font-size: var(--font-size-p);
+    color: var(--color-white);
+  }
+
+input[type=submit] {
+    width: 33%;
+    max-width: 15rem;
+    height: 3rem;
+    background-color: var(--color-primary);
+}
+
+input[type=textarea] {
+    height: 15rem;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+::placeholder {
+    color: var(--color-white);
+    font-size: var(--font-size-p);
+}
