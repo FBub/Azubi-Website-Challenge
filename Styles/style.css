@@ -14,9 +14,12 @@
     --color-black: #000000;
     --color-white: #ffffff;
     --padding-class: 3rem 1.5rem;
+    --padding-class-topbar: 1rem 0.5rem;
+    --padding-class-vertical: 3rem;
     --padding-class-horizontal: 1.5rem;
     --margin-class: 0rem 0rem 1.5rem;
     --margin-h4: 0 0 1.5rem 0;
+    --topbar-height: 10vh;
 }
 
 @font-face {
@@ -85,6 +88,10 @@ a:link, a:visited, a:hover, a:active {
     padding: var(--padding-class);
 }
 
+.padding--topbar {
+    padding: var(--padding-class-topbar);
+}
+
 .margin {
     margin: var(--margin-class);
 }
@@ -96,17 +103,25 @@ a:link, a:visited, a:hover, a:active {
 body {
     height: 100vh;
     min-height: 100vh;
+    padding-top: var(--topbar-height);
 }
+
 
 /* / / / TOPBAR / / / */
 
 .topbar {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-black);
     color: var(--color-white);
-    min-height: 10vh;
+    min-height: var(--topbar-height);
+    max-height: var(--topbar-height);
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    padding: var(--padding-class-topbar);
 }
 
 .topbar::selection,.topbar *::selection {
@@ -115,7 +130,6 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
-
 
 
 header {
@@ -267,3 +281,111 @@ button {
 *:focus {
     outline: none;
 }
+
+
+/*////////////////////  CHECKBOX  ////////////////////*/
+
+.checkbox {
+    display: none;
+}
+
+
+/*////////////////////  MENU  ////////////////////*/
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--color-primary);
+    transform: translateX(100%);
+    z-index: 5;
+  }
+
+  div .checkbox:checked ~ menu {
+    transform: translateX(0%);
+}
+
+
+
+/*////////////////////  CHECKBOX  ////////////////////*/
+/*
+.checkbox {
+    display: none;
+  }
+  
+  .checkbox--menu:checked ~ .menu {
+    transform: translateX(0%);
+  }
+  
+  .checkbox--menu:checked ~ .topbar .switch .topbar__icon {
+    transform: translateX(0.175rem);
+  }
+  
+  .checkbox--menu:checked ~ .topbar {
+    background-color: transparent;
+  }
+  
+  .topbar__contact {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+*/
+/*////////////////////  MENU  ////////////////////*/
+/*
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+    background-color: var(--color-accent);
+    z-index: 1;
+
+    padding: 10rem 5rem 7.5rem 5rem;
+  }
+  
+  .switch {
+    width: 1.75rem;
+    height: 1.75rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .switch .topbar__icon {
+    transform: translateX(-1.5rem);
+  }
+  
+  .menu__item {
+    margin: 0 0 2rem 0;
+
+  }
+  
+  .menu__link {
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .topbar__icon {
+    cursor: pointer;
+    color: var(--color-white);
+    z-index: 5;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .topbar__icon--logo {
+    font-weight: 700;
+  }
+  
+  */
