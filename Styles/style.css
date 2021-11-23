@@ -302,6 +302,18 @@ button {
     background-color: var(--color-primary);
     transform: translateX(100%);
     z-index: 5;
+    color: var(--color-white);
+}
+
+.menu *::selection {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+
+.menu__link {
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .checkbox--menu:checked ~ .menu {
