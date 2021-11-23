@@ -14,7 +14,9 @@
     --color-black: #000000;
     --color-white: #ffffff;
     --padding-class: 3rem 1.5rem;
+    --padding-class-horizontal: 1.5rem;
     --margin-class: 0rem 0rem 1.5rem;
+    --margin-h4: 0 0 1.5rem 0;
 }
 
 @font-face {
@@ -49,8 +51,9 @@ h3 {
 }
 
 h4 {
-        font-family: var(--font-text-family-bold);
-        font-size: var(--font-size-h4);
+    font-family: var(--font-text-family-bold);
+    font-size: var(--font-size-h4);
+    margin: var(--margin-h4);
 }
 
 p {
@@ -221,6 +224,7 @@ input {
     background-color: var(--color-tertiary);
     height: 5rem;
     border-style: none;
+    border-width: 0;
     font-family: var(--font-text-family);
     font-size: var(--font-size-p);
     color: var(--color-white);
@@ -258,4 +262,8 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+*:focus {
+    outline: none;
 }
