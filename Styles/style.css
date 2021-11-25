@@ -14,12 +14,14 @@
     --color-black: #000000;
     --color-white: #ffffff;
     --padding-class: 3rem 1.5rem;
-    --padding-class-topbar: 1rem 0.5rem;
+    --padding-class-topbar: 1rem 1.5rem;
     --padding-class-vertical: 3rem;
     --padding-class-horizontal: 1.5rem;
     --margin-class: 0rem 0rem 1.5rem;
     --margin-h4: 0 0 1.5rem 0;
     --topbar-height: 10vh;
+    --transition-duration: 500ms;
+    --transition-curve: cubic-bezier(0.75, 0, 0.25, 1);
 }
 
 @font-face {
@@ -112,7 +114,7 @@ body {
 .topbar {
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--color-black);
     color: var(--color-white);
@@ -303,6 +305,7 @@ button {
     transform: translateX(100%);
     z-index: 5;
     color: var(--color-white);
+    transition: transform var(--transition-duration) var(--transition-curve);
 }
 
 .menu *::selection {
@@ -314,6 +317,7 @@ button {
 .menu__link {
     list-style-type: none;
     text-decoration: none;
+    margin: var(--margin-h4);
 }
 
 .checkbox--menu:checked ~ .menu {
