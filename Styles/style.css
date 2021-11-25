@@ -150,8 +150,8 @@ header *::selection {
 }
 
 .header__image {
-    position: absolute;
-    z-index: 10;
+    /*position: absolute;
+    z-index: 10;*/
 }
 
 
