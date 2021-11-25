@@ -14,6 +14,7 @@
     --color-black: #000000;
     --color-white: #ffffff;
     --padding-class: 3rem 1.5rem;
+    --padding-class-header: 3rem 1.5rem 0rem;
     --padding-class-topbar: 1rem 1.5rem;
     --padding-class-vertical: 3rem;
     --padding-class-horizontal: 1.5rem;
@@ -86,15 +87,19 @@ a:link, a:visited, a:hover, a:active {
 }
 /* / / / CLASSES / / / */
 
-.padding {
+.section--padding {
     padding: var(--padding-class);
 }
 
-.padding--topbar {
+.topbar--padding {
     padding: var(--padding-class-topbar);
 }
 
-.margin {
+.header--padding {
+    padding: var(--padding-class-header);
+}
+
+.contact--margin {
     margin: var(--margin-class);
 }
 
@@ -144,7 +149,10 @@ header *::selection {
     color: var(--color-primary);
 }
 
-
+.header__image {
+    position: absolute;
+    z-index: 10;
+}
 
 
 .introduction {
