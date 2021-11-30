@@ -286,7 +286,7 @@ input[type=submit] {
     background-color: var(--color-primary);
 }
 
-input[type=textarea] {
+textarea {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
