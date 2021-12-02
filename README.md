@@ -10,6 +10,8 @@ Hello world from my computer, not a mac sadly :(
 
 - [ ] input textarea zu textarea umändern
 
+- [ ] font-face nochmal probieren einzeln zu lösen
+
 - [ ] bei section--padding müsste section existieren, evtl gehört auch zu section hinzu
 
 - [ ] überlegen ob section--padding klasse benötigt wird
@@ -34,9 +36,9 @@ Hello world from my computer, not a mac sadly :(
 
 - [ ] CSS 319 *:focus für diese aufgabe okay aber best practice ist es nicht, eher focus von bestimmten elementen nehmen
 
-- [ ] font-face nochmal probieren einzeln zu lösen
-
 - [ ] CSS 29, 40 gleicher Name 
+
+- [ ] Custom Scrollbar [CSS-Tricks Documentation](https://css-tricks.com/almanac/properties/s/scrollbar/)
 
 [Textarea Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
 
