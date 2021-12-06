@@ -8,11 +8,11 @@ Hello world from my computer, not a mac sadly :(
 ### 2021-11-30
 
 
-- [ ] input textarea zu textarea umändern
+- [x] input textarea zu textarea umändern
 
-- [ ] font-face nochmal probieren einzeln zu lösen
+- [x] font-face nochmal probieren einzeln zu lösen
 
-- [ ] bei section--padding müsste section existieren, evtl gehört auch zu section hinzu
+- [x] bei section--padding müsste section existieren, evtl gehört auch zu section hinzu
 
 - [ ] überlegen ob section--padding klasse benötigt wird
 

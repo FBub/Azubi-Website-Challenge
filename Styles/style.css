@@ -118,7 +118,7 @@ a:link, a:visited, a:hover, a:active {
 }
 /* / / / CLASSES / / / */
 
-.section--padding {
+.section {
     padding: var(--padding-class);
 }
 
