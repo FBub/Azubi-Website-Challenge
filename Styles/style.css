@@ -177,6 +177,7 @@ header {
     clip-path: inset(0 0 0 0);
     overflow: hidden;
     position: relative;
+    height: 22rem;
 }
 
 header h1 {
@@ -193,7 +194,7 @@ header *::selection {
     /*display: flex;*/
     vertical-align: middle;
     position: absolute;
-    top: 0; /*calc( var(--topbar-height) + var(--font-size-p) );*/
+    bottom: -20%; /*calc( var(--topbar-height) + var(--font-size-p) );*/
     left: calc( var(--topbar-height) + var(--font-size-p) );
     z-index: 1;
     /*z-index: 10;*/
@@ -390,4 +391,18 @@ button {
 
 .checkbox--menu:checked ~ .menu {
     transform: translateX(0%);
+}
+
+.checkbox--menu:checked ~ .topbar .menu--icon {
+    transform: rotate3d(0, 1, 0, 180deg);
+    /*transition-property: menu--icon-rotate;
+    transition-duration: 1s;*/
+    transition: transform var(--transition-duration) var(--transition-curve);
+}
+
+.menu--icon {
+    transform: rotate3d(0, 1, 0, 0deg);
+    /*transition-property: menu--icon-rotate;
+    transition-duration: 1s;*/
+    transition: transform var(--transition-duration) var(--transition-curve); 
 }

@@ -14,11 +14,11 @@ Hello world from my computer, not a mac sadly :(
 
 - [x] bei section--padding müsste section existieren, evtl gehört auch zu section hinzu
 
-- [ ] überlegen ob section--padding klasse benötigt wird
+- [x] überlegen ob section--padding klasse benötigt wird
 
 - [ ] js für slider muss umgestellt werden
 
-- [ ] Animate Menuicon 
+- [x] Animate Menuicon  
 
 - [ ] header überlegen ob min-size oder festes format
 
