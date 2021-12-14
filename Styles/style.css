@@ -13,16 +13,22 @@
     --color-tertiary: #e62253;   
     --color-black: #000000;
     --color-white: #ffffff;
-    --padding-class: 3rem 1.5rem;
-    --padding-class-header: 3rem 1.5rem 0rem;
-    --padding-class-topbar: 1rem 1.5rem;
-    --padding-class-vertical: 3rem;
-    --padding-class-horizontal: 1.5rem;
-    --margin-class: 0rem 0rem 1.5rem;
-    --margin-h4: 0 0 1.5rem 0;
+    --padding-class: var(--padding-large) var(--padding-medium);
+    --padding-class-header: var(--padding-large) var(--padding-medium) 0rem;
+    --padding-class-topbar: 1rem var(--padding-medium);
+    --padding-class-vertical: var(--padding-large);
+    --padding-class-horizontal: var(--padding-medium);
+    --margin-class: 0rem 0rem var(--padding-medium);
+    --margin-h4: 0 0 var(--padding-medium) 0;
     --topbar-height: 10vh;
     --transition-duration: 500ms;
     --transition-curve: cubic-bezier(0.75, 0, 0.25, 1);
+
+    --padding-small: 0.875rem;
+    --padding-medium: 1.5rem;
+    --padding-large: 3rem;
+
+    
 }
 
 @font-face {
@@ -154,8 +160,7 @@ body {
     align-items: center;
     background-color: var(--color-black);
     color: var(--color-white);
-    min-height: var(--topbar-height);
-    max-height: var(--topbar-height);
+    height: var(--topbar-height);
     width: 100%;
     z-index: 5;
     top: 0;
@@ -171,7 +176,7 @@ body {
 
 /*////////////////////  HEADER  ////////////////////*/
 
-header {
+.header {
     background-color: var(--color-primary);
     color: var(--color-white);
     clip-path: inset(0 0 0 0);
@@ -180,12 +185,12 @@ header {
     height: 22rem;
 }
 
-header h1 {
+.header h1 {
     z-index: 10;
     position: relative;
 }
 
-header *::selection {
+.header *::selection {
     background-color: var(--color-white);
     color: var(--color-primary);
 }
@@ -273,12 +278,12 @@ header *::selection {
 
 /*////////////////////  FOOTER  ////////////////////*/
 
-footer {
+.footer {
     background-color: var(--color-black);
     color: var(--color-white);
 }
 
-footer *::selection {
+.footer *::selection {
     background-color: var(--color-white);
     color: var(--color-black);
 }
@@ -296,7 +301,7 @@ footer *::selection {
 
 /*////////////////////  CONTACT INPUT  ////////////////////*/
 
-input {
+.input {
     width: 100%;
     background-color: var(--color-tertiary);
     border-style: none;
@@ -306,14 +311,14 @@ input {
     color: var(--color-white);
   }
 
-input[type=submit] {
+.input[type=submit] {
     width: 33%;
     max-width: 15rem;
     height: 3rem;
     background-color: var(--color-primary);
 }
 
-textarea {
+.textarea {
     width: 100%;
     background-color: var(--color-tertiary);
     border-style: none;
