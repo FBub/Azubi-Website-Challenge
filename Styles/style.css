@@ -13,20 +13,21 @@
     --color-tertiary: #e62253;   
     --color-black: #000000;
     --color-white: #ffffff;
-    --padding-class: var(--padding-large) var(--padding-medium);
-    --padding-class-header: var(--padding-large) var(--padding-medium) 0rem;
-    --padding-class-topbar: 1rem var(--padding-medium);
-    --padding-class-vertical: var(--padding-large);
-    --padding-class-horizontal: var(--padding-medium);
-    --margin-class: 0rem 0rem var(--padding-medium);
-    --margin-h4: 0 0 var(--padding-medium) 0;
+    --padding-class: var(--spacing-large) var(--spacing-medium);
+    --padding-class-header: var(--spacing-large) var(--spacing-medium) 0rem;
+    --padding-class-topbar: 1rem var(--spacing-medium);
+    --padding-class-vertical: var(--spacing-large);
+    --padding-class-horizontal: var(--spacing-medium);
+    --margin-class: 0rem 0rem var(--spacing-medium);
+    --margin-h4: 0 0 var(--spacing-medium) 0;
     --topbar-height: 10vh;
     --transition-duration: 500ms;
     --transition-curve: cubic-bezier(0.75, 0, 0.25, 1);
 
-    --padding-small: 0.875rem;
-    --padding-medium: 1.5rem;
-    --padding-large: 3rem;
+    --gutter: 1rem;
+    --spacing-small: calc(var(--gutter) * 0.875); /*0.875rem;*gutter x amount*/
+    --spacing-medium: calc(var(--gutter) * 1.5);
+    --spacing-large: calc(var(--gutter) * 3);
 
     
 }
