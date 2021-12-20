@@ -423,4 +423,5 @@ button {
     color: var(--color-white)*/
     width: 25px;
     height: 25px;
+    outline: solid 1px white;
 }
