@@ -25,7 +25,7 @@ Hello world from my computer, not a mac sadly :(
 
 - [ ] Custom Scrollbar [CSS-Tricks Documentation](https://css-tricks.com/almanac/properties/s/scrollbar/)
 
-
+- [ ] Spacing after headlines
 
 ### **WIP**
 
