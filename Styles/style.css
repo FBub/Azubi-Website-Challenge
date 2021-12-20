@@ -111,8 +111,33 @@ a {
 
 
 
-.link:after {
+/*.link:after {
     content: " 🡽";
+}*/
+
+.link:after {
+    display: inline-block;
+    content: url(../Icons/Arrow-Right.svg);
+    background-image: url(../Icons/Arrow-Right.svg);
+    width: 2rem;
+    height: 2rem;
+    vertical-align: -0.5rem;
+    color: white;
+    fill: white;
+    transform: rotate(-45deg);
+}
+
+.link-white:after {
+    display: inline-block;
+    content: url(../Icons/Arrow-Right.svg);
+    background-image: url(../Icons/Arrow-Right.svg);
+    width: 2rem;
+    height: 2rem;
+    vertical-align: -0.5rem;
+    color: white;
+    fill: white;
+    transform: rotate(-45deg);
+    filter: invert(1);
 }
 
 
@@ -415,13 +440,16 @@ button {
 
 
 .icon {
-
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-white);
 }
 
 .icon--arrow__right {
     /*background-image:url("../Icons/Arrow-Right.svg");
     color: var(--color-white)*/
-    width: 25px;
-    height: 25px;
-    outline: solid 1px white;
+    /*outline: solid 1px white;
+    background: var(--color-primary);
+    mask-image: url("../Azubi-Website-Challenge/Icons/Arrow-Right.svg");
+    -webkit-mask-image: url("../Azubi-Website-Challenge/Icons/Arrow-Right.svg");*/
 }
