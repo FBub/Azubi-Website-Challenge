@@ -419,6 +419,8 @@ button {
 }
 
 .icon--arrow__right {
-    background-image:url("../Icons/Arrow-Right.svg");
-    color: var(--color-white)
+    /*background-image:url("../Icons/Arrow-Right.svg");
+    color: var(--color-white)*/
+    width: 25px;
+    height: 25px;
 }
