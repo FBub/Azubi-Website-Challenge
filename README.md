@@ -27,6 +27,25 @@ Hello world from my computer, not a mac sadly :(
 
 - [ ] Spacing after headlines
 
+21.12.2021
+
+Header clippath entfernen
+
+slider 
+
+anfangen responsive wenn bereit;
+input felder maxbreite, textlaufweite, slider
+
+z.B: introduction zu section--introduction ändern
+
+wrap in stong tag / klasse (muss nicht unbedingt) 
+
+evtl grid einbauen— erstmal andere sachen
+
+ids in website einfügen
+
+
+
 ### **WIP**
 
 - [ ] in README.md section für wip/todo erstellen
@@ -60,6 +79,9 @@ Hello world from my computer, not a mac sadly :(
 - [x] removed --padding-class-vertical, --padding-class-horizontal, -margin-class, --padding-class-header, margin-h4
 
 - [x] removed unnecessary color, fill on :after elements
+
+- [x] added section--yellow, blue and white and commented out the previous classes
+
 
 
 ### **Tips & Tricks**

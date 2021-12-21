@@ -53,6 +53,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Atkinson Hyperlegible', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--topbar-height);
 }
 
 /*////////////////////  SCROLLBAR  ////////////////////*/
@@ -231,7 +233,7 @@ body {
 
 /*////////////////////  ABOUT  ////////////////////*/
 
-.about {
+/*.about {
     background-color: var(--color-white);
     color: var(--color-black);
 }
@@ -243,11 +245,11 @@ body {
 
 .about h2 {
     color: var(--color-primary);
-}
+}*/
 
 /*////////////////////  PROJECTS  ////////////////////*/
 
-.projects {
+/*.projects {
     background-color: var(--color-black);
     color: var(--color-white);
 }
@@ -260,14 +262,13 @@ body {
 .projects a {
     color: black;
     background-color: white;
-}
+}*/
 
 /*////////////////////  CONTACT  ////////////////////*/
 
-.contact {
+/*.contact {
     background-color: var(--color-secondary);
-    color: var(--color-black);
-    
+    color: var(--color-black);  
 }
 
 .contact *::selection {
@@ -277,7 +278,7 @@ body {
 
 .contact h2 {
     color: var(--color-tertiary);
-}
+}*/
 
 .contact__form {
     /* next 3 lines allow button to be on the right */
@@ -313,29 +314,29 @@ body {
 
 .input {
     width: 100%;
-    background-color: var(--color-tertiary);
+    /*background-color: var(--color-tertiary);*/
     border-style: none;
     border-width: 0;
     font-family: var(--font-text-family);
     font-size: var(--font-size-p);
-    color: var(--color-white);
+    /*color: var(--color-white);*/
   }
 
 .input[type=submit] {
     width: 33%;
     max-width: 15rem;
     height: 3rem;
-    background-color: var(--color-primary);
+    /*background-color: var(--color-primary);*/
 }
 
 .textarea {
     width: 100%;
-    background-color: var(--color-tertiary);
+    /*background-color: var(--color-tertiary);*/
     border-style: none;
     border-width: 0;
     font-family: var(--font-text-family);
     font-size: var(--font-size-p);
-    color: var(--color-white);
+    /*color: var(--color-white);*/
 
     resize: none;
     display: flex;
@@ -347,7 +348,7 @@ body {
 }
 
 ::placeholder {
-    color: var(--color-white);
+    /*color: var(--color-white);*/
     font-size: var(--font-size-p);
 }
 
@@ -440,6 +441,104 @@ button {
     -webkit-mask-image: url("../Azubi-Website-Challenge/Icons/Arrow-Right.svg");*/
 }
 
+/*////////////////////  SECTION PRIMARY / BLUE  ////////////////////*/
+
+.section--blue {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.section--blue *::selection {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.section--blue h1 {
+    color: var(--color-white);
+}
+
+.section--blue h1::selection {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.section--blue h2 {
+    color: var(--color-white);
+}
+
+.section--blue h2::selection {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.section--blue h3 {
+    color: var(--color-white);
+}
+
+.section--blue h3::selection {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.section--blue h4 {
+    color: var(--color-white);
+}
+
+.section--blue h4::selection {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.section--blue p {
+    color: var(--color-white);
+}
+
+.section--yellow p::selection {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.section--blue a {
+    color: var(--color-white);
+}
+
+.section--blue a::selection {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.section--blue .input {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--blue .input::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.section--blue .input[type=submit] {
+    background-color: var(--color-secondary);
+}
+
+.section--blue .textarea {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--blue .textarea::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.section--blue ::placeholder {
+    color: var(--color-black);
+}
+
+
+
+
+
 /*////////////////////  SECTION SECONDARY / YELLOW  ////////////////////*/
 
 .section--yellow {
@@ -504,4 +603,225 @@ button {
 .section--yellow a::selection {
     color: var(--color-secondary);
     background-color: var(--color-black);
+}
+
+.section--yellow .input {
+    color: var(--color-white);
+    background-color: var(--color-tertiary);
+  }
+
+.section--yellow .input::selection {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.section--yellow .input[type=submit] {
+    background-color: var(--color-primary);
+}
+
+.section--yellow .textarea {
+    color: var(--color-white);
+    background-color: var(--color-tertiary);
+}
+
+.section--yellow .textarea::selection {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.section--yellow ::placeholder {
+    color: var(--color-white);
+}
+
+
+/*////////////////////  SECTION WHITE  ////////////////////*/
+
+.section--white {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--white *::selection {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.section--white h1 {
+    color: var(--color-primary);
+}
+
+.section--white h1::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.section--white h2 {
+    color: var(--color-primary);
+}
+
+.section--white h2::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.section--white h3 {
+    color: var(--color-primary);
+}
+
+.section--white h3::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.section--white h4 {
+    color: var(--color-primary);
+}
+
+.section--white h4::selection {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.section--white p {
+    color: var(--color-black);
+}
+
+.section--white p::selection {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.section--white a {
+    color: var(--color-black);
+}
+
+.section--white a::selection {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.section--white .input {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+
+.section--white .input::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--white .input[type=submit] {
+    background-color: var(--color-black);
+}
+
+.section--white .textarea {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.section--white .textarea::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--white ::placeholder {
+    color: var(--color-white);
+}
+
+
+
+/*////////////////////  SECTION BLACK  ////////////////////*/
+
+.section--black {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.section--black *::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black h1 {
+    color: var(--color-white);
+}
+
+.section--black h1::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black h2 {
+    color: var(--color-white);
+}
+
+.section--black h2::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black h3 {
+    color: var(--color-white);
+}
+
+.section--black h3::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black h4 {
+    color: var(--color-white);
+}
+
+.section--black h4::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black p {
+    color: var(--color-white);
+}
+
+.section--black p::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black a {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black a::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+
+.section--black .input {
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+.section--black .input::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black .input[type=submit] {
+    background-color: var(--color-white);
+}
+
+.section--black .textarea {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black .textarea::selection {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.section--black ::placeholder {
+    color: var(--color-black);
 }
