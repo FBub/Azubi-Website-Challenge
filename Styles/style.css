@@ -15,7 +15,6 @@
     --color-white: #ffffff;
     --topbar-height: 10vh;
 
-    --margin-h4:;
     --transition-duration: 500ms;
     --transition-curve: cubic-bezier(0.75, 0, 0.25, 1);
 
@@ -146,10 +145,6 @@ a:link, a:visited, a:hover, a:active {
     padding: var(--spacing-large) var(--spacing-medium);
 }
 
-.header--padding {
-    padding: var(--spacing-large) var(--spacing-medium) 0rem;
-}
-
 .contact--margin {
     margin: 0rem 0rem var(--spacing-medium);
 }
@@ -224,7 +219,7 @@ body {
 
 /*////////////////////  INTRODUCTION  ////////////////////*/
 
-.introduction {
+/*.introduction {
     background-color: var(--color-secondary);
     color: var(--color-black);
 }
@@ -232,7 +227,7 @@ body {
 .introduction *::selection {
     background-color: var(--color-black);
     color: var(--color-secondary);
-}
+}*/
 
 /*////////////////////  ABOUT  ////////////////////*/
 
@@ -443,4 +438,70 @@ button {
     background: var(--color-primary);
     mask-image: url("../Azubi-Website-Challenge/Icons/Arrow-Right.svg");
     -webkit-mask-image: url("../Azubi-Website-Challenge/Icons/Arrow-Right.svg");*/
+}
+
+/*////////////////////  SECTION SECONDARY / YELLOW  ////////////////////*/
+
+.section--yellow {
+    color: var(--color-black);
+    background-color: var(--color-secondary);
+}
+
+.section--yellow *::selection {
+    color: var(--color-secondary);
+    background-color: var(--color-black);
+}
+
+.section--yellow h1 {
+    color: var(--color-tertiary);
+}
+
+.section--yellow h1::selection {
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+}
+
+.section--yellow h2 {
+    color: var(--color-tertiary);
+}
+
+.section--yellow h2::selection {
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+}
+
+.section--yellow h3 {
+    color: var(--color-tertiary);
+}
+
+.section--yellow h3::selection {
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+}
+
+.section--yellow h4 {
+    color: var(--color-tertiary);
+}
+
+.section--yellow h4::selection {
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+}
+
+.section--yellow p {
+
+}
+
+.section--yellow p::selection {
+    color: var(--color-secondary);
+    background-color: var(--color-black);
+}
+
+.section--yellow a {
+
+}
+
+.section--yellow a::selection {
+    color: var(--color-secondary);
+    background-color: var(--color-black);
 }
