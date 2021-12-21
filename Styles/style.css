@@ -13,21 +13,16 @@
     --color-tertiary: #e62253;   
     --color-black: #000000;
     --color-white: #ffffff;
-    --padding-class: var(--spacing-large) var(--spacing-medium);
-    --padding-class-header: var(--spacing-large) var(--spacing-medium) 0rem;
-    --padding-class-topbar: 1rem var(--spacing-medium);
-    --padding-class-vertical: var(--spacing-large);
-    --padding-class-horizontal: var(--spacing-medium);
-    --margin-class: 0rem 0rem var(--spacing-medium);
-    --margin-h4: 0 0 var(--spacing-medium) 0;
     --topbar-height: 10vh;
+
+    --margin-h4:;
     --transition-duration: 500ms;
     --transition-curve: cubic-bezier(0.75, 0, 0.25, 1);
 
     --gutter: 1rem;
     --spacing-small: calc(var(--gutter) * 0.875); /*0.875rem;*gutter x amount*/
-    --spacing-medium: calc(var(--gutter) * 1.5);
-    --spacing-large: calc(var(--gutter) * 3);
+    --spacing-medium: calc(var(--gutter) * 1.5); /*1.5rem*/
+    --spacing-large: calc(var(--gutter) * 3); /*3rem*/
 
     --icon-size--small: 2rem;
     --icon-size--medium: 3rem;
@@ -97,7 +92,7 @@ h3 {
 h4 {
     font-family: var(--font-text-family-bold);
     font-size: var(--font-size-h4);
-    margin: var(--margin-h4);
+    /*margin:  0 0 var(--spacing-medium) 0;*/
 }
 
 p {
@@ -124,8 +119,6 @@ a {
     width: 2rem;
     height: 2rem;
     vertical-align: -0.5rem;
-    color: white;
-    fill: white;
     transform: rotate(-45deg);
 }
 
@@ -135,8 +128,6 @@ a {
     width: var(--icon-size--small);
     height: var(--icon-size--small);
     vertical-align: -0.5rem;
-    color: white;
-    fill: white;
     transform: rotate(-45deg);
     filter: invert(1);
 }
@@ -152,19 +143,15 @@ a:link, a:visited, a:hover, a:active {
 /* / / / CLASSES / / / */
 
 .section {
-    padding: var(--padding-class);
-}
-
-.topbar--padding {
-    padding: var(--padding-class-topbar);
+    padding: var(--spacing-large) var(--spacing-medium);
 }
 
 .header--padding {
-    padding: var(--padding-class-header);
+    padding: var(--spacing-large) var(--spacing-medium) 0rem;
 }
 
 .contact--margin {
-    margin: var(--margin-class);
+    margin: 0rem 0rem var(--spacing-medium);
 }
 
 
@@ -191,7 +178,7 @@ body {
     width: 100%;
     z-index: 5;
     top: 0;
-    padding: var(--padding-class-topbar);
+    padding: 1rem var(--spacing-medium);
 }
 
 .topbar::selection,.topbar *::selection {
@@ -210,6 +197,7 @@ body {
     overflow: hidden;
     position: relative;
     height: 22rem;
+    padding: var(--spacing-large) var(--spacing-medium) 0rem;
 }
 
 .header h1 {
@@ -368,9 +356,7 @@ body {
     font-size: var(--font-size-p);
 }
 
-.elementspacing {
-    margin: var(--margin-class);
-}
+
 
 /* BUTTON https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit */
 
@@ -415,10 +401,14 @@ button {
 }
 
 
-.menu__link {
+.menu__list {
     list-style-type: none;
     text-decoration: none;
-    margin: var(--margin-h4);
+    margin: 0 0 var(--spacing-medium) 0;
+}
+
+.menu__link {
+    font-size: var(--font-size-h3);
 }
 
 .checkbox--menu:checked ~ .menu {

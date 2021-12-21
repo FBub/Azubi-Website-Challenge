@@ -51,6 +51,15 @@ Hello world from my computer, not a mac sadly :(
 
 - [x] header--image top 0 zu bottom 0 ändern im header 
 
+21.12.2021
+- [x] added --icon-size--small, --icon-size--medium, --icon-size--large
+
+
+- [x] removed .topbar--padding, switch padding to .topbar, .header--padding
+
+- [x] removed --padding-class-vertical, --padding-class-horizontal, -margin-class, --padding-class-header, margin-h4
+
+- [x] removed unnecessary color, fill on :after elements
 
 
 ### **Tips & Tricks**
