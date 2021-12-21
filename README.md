@@ -44,7 +44,7 @@ evtl grid einbauen— erstmal andere sachen
 
 ids in website einfügen
 
-
+!!! link arrow after doesnt change colors
 
 ### **WIP**
 
