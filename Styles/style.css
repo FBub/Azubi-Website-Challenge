@@ -29,7 +29,9 @@
     --spacing-medium: calc(var(--gutter) * 1.5);
     --spacing-large: calc(var(--gutter) * 3);
 
-    
+    --icon-size--small: 2rem;
+    --icon-size--medium: 3rem;
+    --icon-size--large: ;
 }   
 
 @font-face {
@@ -130,9 +132,8 @@ a {
 .link-white:after {
     display: inline-block;
     content: url(../Icons/Arrow-Right.svg);
-    background-image: url(../Icons/Arrow-Right.svg);
-    width: 2rem;
-    height: 2rem;
+    width: var(--icon-size--small);
+    height: var(--icon-size--small);
     vertical-align: -0.5rem;
     color: white;
     fill: white;
@@ -316,7 +317,7 @@ body {
 
 .footer__icon {
     fill: var(--color-white);
-    height: 3rem;
+    height: var(--icon-size--medium);
     margin: 0 1rem 0 0;
 }
 
@@ -440,8 +441,8 @@ button {
 
 
 .icon {
-    width: 3rem;
-    height: 3rem;
+    width: var(--icon-size--medium);
+    height: var(--icon-size--medium);
     fill: var(--color-white);
 }
 
