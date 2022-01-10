@@ -109,14 +109,9 @@ a {
 
 
 
-/*.link:after {
-    content: " 🡽";
-}*/
-
 .link:after {
     display: inline-block;
     content: url(../Icons/Arrow-Right.svg);
-    background-image: url(../Icons/Arrow-Right.svg);
     width: 2rem;
     height: 2rem;
     vertical-align: -0.5rem;
@@ -164,7 +159,7 @@ body {
 
 /*////////////////////  TOPBAR  ////////////////////*/
 
-.topbar {
+.section--topbar {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -178,7 +173,7 @@ body {
     padding: 1rem var(--spacing-medium);
 }
 
-.topbar::selection,.topbar *::selection {
+.section--topbar::selection,.section--topbar *::selection {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -219,67 +214,6 @@ body {
     overflow: hidden;
 }
 
-/*////////////////////  INTRODUCTION  ////////////////////*/
-
-/*.introduction {
-    background-color: var(--color-secondary);
-    color: var(--color-black);
-}
-
-.introduction *::selection {
-    background-color: var(--color-black);
-    color: var(--color-secondary);
-}*/
-
-/*////////////////////  ABOUT  ////////////////////*/
-
-/*.about {
-    background-color: var(--color-white);
-    color: var(--color-black);
-}
-
-.about *::selection {
-    background-color: var(--color-black);
-    color: var(--color-white);
-}
-
-.about h2 {
-    color: var(--color-primary);
-}*/
-
-/*////////////////////  PROJECTS  ////////////////////*/
-
-/*.projects {
-    background-color: var(--color-black);
-    color: var(--color-white);
-}
-
-.projects *::selection {
-    background-color: var(--color-white);
-    color: var(--color-black);
-}
-
-.projects a {
-    color: black;
-    background-color: white;
-}*/
-
-/*////////////////////  CONTACT  ////////////////////*/
-
-/*.contact {
-    background-color: var(--color-secondary);
-    color: var(--color-black);  
-}
-
-.contact *::selection {
-    background-color: var(--color-black);
-    color: var(--color-secondary);
-}
-
-.contact h2 {
-    color: var(--color-tertiary);
-}*/
-
 .contact__form {
     /* next 3 lines allow button to be on the right */
     display: flex;
@@ -289,23 +223,23 @@ body {
 
 /*////////////////////  FOOTER  ////////////////////*/
 
-.footer {
+.section--footer {
     background-color: var(--color-black);
     color: var(--color-white);
 }
 
-.footer *::selection {
+.section--footer *::selection {
     background-color: var(--color-white);
     color: var(--color-black);
 }
 
-.footer__icon {
+.section--footer__icon {
     fill: var(--color-white);
     height: var(--icon-size--medium);
     margin: 0 1rem 0 0;
 }
 
-.footer__iconbar {
+.section--footer__iconbar {
     display: flex;
 }
 
@@ -499,6 +433,16 @@ button {
 
 .section--blue a {
     color: var(--color-white);
+}
+
+.section--blue .link:after {
+    display: inline-block;
+    content: url(../Icons/Arrow-Right.svg);
+    width: 2rem;
+    height: 2rem;
+    vertical-align: -0.5rem;
+    transform: rotate(-45deg);
+    filter: invert(1);
 }
 
 .section--blue a::selection {

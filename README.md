@@ -29,22 +29,17 @@ Hello world from my computer, not a mac sadly :(
 
 21.12.2021
 
-- [x] Header clippath entfernen
-
 - [ ] slider 
-
-- [ ] anfangen responsive wenn bereit;
-input felder maxbreite, textlaufweite, slider
-
-- [ ] z.B: introduction zu section--introduction ändern
 
 - [ ] wrap in stong tag / klasse (muss nicht unbedingt) 
 
 - [ ] evtl grid einbauen— erstmal andere sachen
 
-- [ ] ids in website einfügen
 
-- [ ] !!! link arrow after doesnt change colors
+- [ ] .contact__form name change
+
+- [ ] anfangen responsive wenn bereit;
+input felder maxbreite, textlaufweite, slider
 
 ### **WIP**
 
@@ -82,7 +77,15 @@ input felder maxbreite, textlaufweite, slider
 
 - [x] added section--yellow, blue and white and commented out the previous classes
 
+10.01.2021
 
+- [x] Header clippath entfernen
+
+- [x] !!! link arrow after doesnt change colors
+
+- [x] ids in website einfügen
+
+- [x] z.B: introduction zu section--introduction ändern
 
 ### **Tips & Tricks**
 
