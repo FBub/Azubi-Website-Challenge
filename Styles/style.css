@@ -215,7 +215,7 @@ body {
     left: calc( var(--topbar-height) + var(--font-size-p) );
     z-index: 1;
     /*z-index: 10;*/
-    clip-path: inset(0 0 0 0);
+    /*clip-path: inset(0 0 0 0);*/
     overflow: hidden;
 }
 
@@ -373,7 +373,6 @@ button {
 /*////////////////////  CHECKBOX  ////////////////////*/
 
 .checkbox {
-
     display: none;
 }
 

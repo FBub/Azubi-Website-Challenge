@@ -29,22 +29,22 @@ Hello world from my computer, not a mac sadly :(
 
 21.12.2021
 
-Header clippath entfernen
+- [x] Header clippath entfernen
 
-slider 
+- [ ] slider 
 
-anfangen responsive wenn bereit;
+- [ ] anfangen responsive wenn bereit;
 input felder maxbreite, textlaufweite, slider
 
-z.B: introduction zu section--introduction ändern
+- [ ] z.B: introduction zu section--introduction ändern
 
-wrap in stong tag / klasse (muss nicht unbedingt) 
+- [ ] wrap in stong tag / klasse (muss nicht unbedingt) 
 
-evtl grid einbauen— erstmal andere sachen
+- [ ] evtl grid einbauen— erstmal andere sachen
 
-ids in website einfügen
+- [ ] ids in website einfügen
 
-!!! link arrow after doesnt change colors
+- [ ] !!! link arrow after doesnt change colors
 
 ### **WIP**
 
