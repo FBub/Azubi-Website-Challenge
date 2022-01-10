@@ -36,8 +36,6 @@ Hello world from my computer, not a mac sadly :(
 - [ ] evtl grid einbauen— erstmal andere sachen
 
 
-- [ ] .contact__form name change
-
 - [ ] anfangen responsive wenn bereit;
 input felder maxbreite, textlaufweite, slider
 
@@ -86,6 +84,10 @@ input felder maxbreite, textlaufweite, slider
 - [x] ids in website einfügen
 
 - [x] z.B: introduction zu section--introduction ändern
+
+- [x] .contact__form name change
+
+- [x] .elementspacing name change to .section--footer__element
 
 ### **Tips & Tricks**
 

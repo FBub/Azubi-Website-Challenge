@@ -203,18 +203,20 @@ body {
 }
 
 .header__image {
-    /*display: flex;*/
     vertical-align: middle;
     position: absolute;
-    bottom: -20%; /*calc( var(--topbar-height) + var(--font-size-p) );*/
-    left: calc( var(--topbar-height) + var(--font-size-p) );
+    bottom: -15%;
+    left: calc( var(--topbar-height) + var(--spacing-large) );
     z-index: 1;
-    /*z-index: 10;*/
-    /*clip-path: inset(0 0 0 0);*/
+    /* z-index: 10; */
+    /* clip-path: inset(0 0 0 0); */
     overflow: hidden;
+    width: 85%;
+    height: auto;
 }
 
-.contact__form {
+
+.section--contact-form {
     /* next 3 lines allow button to be on the right */
     display: flex;
     flex-flow: column;
@@ -243,6 +245,9 @@ body {
     display: flex;
 }
 
+.section--footer__element {
+    margin: 0 0 var(--spacing-medium) 0;
+}
 
 /*////////////////////  CONTACT INPUT  ////////////////////*/
 
@@ -344,7 +349,7 @@ button {
     transform: translateX(0%);
 }
 
-.checkbox--menu:checked ~ .topbar .menu--icon {
+.checkbox--menu:checked ~ .section--topbar .menu--icon {
     transform: rotate3d(0, 1, 0, 180deg);
     /*transition-property: menu--icon-rotate;
     transition-duration: 1s;*/
