@@ -89,6 +89,18 @@ input felder maxbreite, textlaufweite, slider
 
 - [x] .elementspacing name change to .section--footer__element
 
+11.01.2021
+
+.contact__form, evtl form als base klasse da Möglichkeit, dass mehrere Forms in Zukunft da sein könnten (form--contact als modifier-class)
+
+section--footer__element evtl über footer regeln
+
+min width bei Geräten 320px
+
+Lösung für fetten text innerhalb fließtext
+
+codeacademy js course
+
 ### **Tips & Tricks**
 
 [Textarea Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)

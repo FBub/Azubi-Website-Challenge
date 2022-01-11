@@ -107,7 +107,9 @@ a {
     text-decoration: none;
 }
 
-
+.bold {
+    font-family: var(--font-text-family-bold);
+}
 
 .link:after {
     display: inline-block;
@@ -214,7 +216,6 @@ body {
     width: 85%;
     height: auto;
 }
-
 
 .section--contact-form {
     /* next 3 lines allow button to be on the right */
