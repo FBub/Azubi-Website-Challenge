@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azubi Website Challenge</title>
     <link rel="stylesheet" href="Styles\style.css">
-    <link rel="stylesheet" href="Scripts\script.js">
+    <script src="Scripts/script.js" defer=""></script>
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.css">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.css">
 </head>
@@ -37,7 +37,7 @@
     </nav>
 
     <header class="header">
-        <h1>Fay Does Design</h1>
+        <h1 class="header__headline">Fay<br> Does<br> Design</h1>
         <img class="header__image" src="Images/Photo-Fay.png">
     </header>
 
@@ -115,9 +115,9 @@
             <p>Please shoot me a message, I'm all ears</p>
 
             <form class="section--contact-form">
-               <input type="email" name="email" placeholder="Your E-Mail" class="input section contact--margin"/>
-               <input type="text" name="subject" placeholder="Your Subject" class="input section contact--margin"/>
-               <textarea type="textarea" name="message" placeholder="Your Message" class="textarea section contact--margin" rows="4" cols="50"></textarea>
+               <input type="email" name="email" placeholder="Your E-Mail" class="input textbox contact--margin"/>
+               <input type="text" name="subject" placeholder="Your Subject" class="input textbox contact--margin"/>
+               <textarea type="textarea" name="message" placeholder="Your Message" class="textarea textbox contact--margin" rows="4" cols="50"></textarea>
                <input type="submit" value="Send" class="input">
             </form>
         </section>  
