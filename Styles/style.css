@@ -790,7 +790,7 @@ button {
 
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
     :root {
         --font-size-h1: 3.926886rem;
         --font-size-h2: 2.427rem;
