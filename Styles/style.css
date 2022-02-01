@@ -889,6 +889,22 @@ button {
 
     .menu {
         padding: var(--spacing-large) var(--spacing-medium);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .menu__link {
+        font-size: var(--font-size-h1);
+    }
+
+    .menu ul {
+        padding-bottom: 5rem;
+    }
+
+    a.menu__link:hover {
+        color: var(--color-secondary);
     }
     
     .header {
@@ -915,8 +931,24 @@ button {
 
     .menu {
         padding: var(--spacing-large) var(--spacing-medium);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
-    
+
+    .menu__link {
+        font-size: var(--font-size-h1);
+    }
+
+    .menu ul {
+        padding-bottom: 5rem;
+    }
+
+    a.menu__link:hover {
+        color: var(--color-secondary);
+    }
+
     .header {
         height: 40rem;
         padding: var(--spacing-large) calc(var(--spacing-large) * 6);    
@@ -949,7 +981,24 @@ button {
     
     .menu {
         padding: var(--spacing-large) var(--spacing-medium);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
+
+    .menu__link {
+        font-size: calc(var(--font-size-h1) / 1.618);
+    }
+
+    .menu ul {
+        padding-bottom: 5rem;
+    }
+
+    a.menu__link:hover {
+        color: var(--color-secondary);
+    }
+    
     
     .header {
         height: 55rem;
